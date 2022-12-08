@@ -1,6 +1,5 @@
 let selectedArray = [];
 
-
 function createNumbers() {
     let parentDiv = document.getElementsByClassName('bingoBoard')[0]
     for (let i = 1; i <= 76; i++) {
@@ -30,12 +29,13 @@ function generateRandom() {
 
 
 function startGame() {
-    console.log('test');
+    let generateNumberBtn = document.getElementsByTagName('button')[0];
+    generateNumberBtn.classList.add('showElement')
+
     let userBoards = document.getElementsByTagName('input')[0].value
 
     let setNumberDiv = document.getElementsByClassName('setNumber')[0]
     setNumberDiv.classList.add('hideElement')
-    console.log(userBoards)
 
     let parentUserDiv = document.getElementsByClassName('userSection')[0]
     for (let i = 0; i < userBoards; i++) {
