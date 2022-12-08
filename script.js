@@ -15,15 +15,6 @@ function createNumbers() {
 createNumbers()
 
 
-function someCssFor67() {
-
-    let number67 = document.getElementById('div67')
-    number67.classList.add('number67')
-}
-
-someCssFor67()
-
-
 function generateRandom() {
     let randomNum = Math.floor(Math.random() * 76) + 1;
     while (selectedArray.includes(randomNum)) {
